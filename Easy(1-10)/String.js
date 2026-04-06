@@ -64,4 +64,24 @@ function addNumber(str){
 
 
 // for multi digit number 
-function 
+function sumNumberAdvance(str){
+    let sum =0;
+    let num =""
+
+    for(let ch of str){
+        if(ch>="0" && ch <="9"){
+            num += ch;
+        }
+        else{
+            if(num !==""){
+                sum +=Number(num);
+                num = ""
+            }
+        }
+    }
+    if(num !==""){
+        sum += Number(num)
+    }
+    return sum
+}
+console.log(sumNumberAdvance("a1c2v4v23g3v3"))
