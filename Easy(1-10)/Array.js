@@ -28,4 +28,15 @@ function maxElement(arr){
      return max
 }
 
-// Reverse 
+// Reverse Array
+function reverseArray(arr){
+     let rev =[]
+     for(let i=arr.length-1;i>=0;i--){
+          rev.push(arr[i])
+
+     }
+     return rev
+}
+
+// Count even number
+f
