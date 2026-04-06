@@ -84,4 +84,26 @@ function sumNumberAdvance(str){
     }
     return sum
 }
-console.log(sumNumberAdvance("a1c2v4v23g3v3"))
+
+// Remove duplicate string
+function removeDuplicates(str){
+    let result = "";
+
+    for(let i = 0; i < str.length; i++){
+        let found = false;
+
+        for(let j = 0; j < result.length; j++){
+            if(str[i] === result[j]){
+                found = true;
+                break;
+            }
+        }
+
+        if(found === false){
+            result = result + str[i];
+        }
+    }
+
+    return result;
+}
+console.log(removeDuplicates("aaaaaab"))
